@@ -1,0 +1,84 @@
+.containerMenu{
+    min-width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    
+    background: rgb(200, 44, 221);
+}
+
+.containerMenu .topMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.containerMenu .topMenu .containerLogo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.containerMenu .topMenu .containerLogo img{
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+}
+
+.containerMenu .topMenu .containerInput{
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+}
+
+.containerMenu .topMenu .containerInput div{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 5px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.containerMenu .topMenu .containerInput div .inputSearch{
+    padding-left: 5px;
+}
+.containerMenu .topMenu .containerInput div .inputSearch, .button{
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.containerMenu .topMenu .containerInput div input{
+    width: 90%;
+    height: 3rem;
+}
+
+.containerMenu .topMenu .containerInput div button{
+    width: 10%;
+    height: 3rem;
+}
+
+
+.containerMenu .topMenu .containerLogin{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+
+.containerMenu .lineOptions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 360){
+    .containerMenu .topMenu .containerLogo img{
+        margin-right: 1.5rem;
+    }
+}

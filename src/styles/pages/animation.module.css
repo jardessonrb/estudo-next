@@ -1,0 +1,93 @@
+/*
+Animação das bolinhas subindo e descendo
+Dar para melhorar muito ainda ...
+*/
+
+
+.container div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(6, 205, 240);
+    margin-right: 20px;
+
+    animation: wave 0.5s ease-in-out infinite alternate;
+}
+
+.container div:nth-child(1){
+    animation-delay: -0.4s;
+}
+
+.container div:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+@keyframes wave{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
+
+
+/*Circle Loading*/
+
+.containerCircleLoading, .lineDotsLoadingContainer, .container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 39, 39);
+    opacity: 0.6;
+}
+
+.containerCircleLoading .circleLoading{
+    width: 120px;
+    height: 120px;
+    border: 10px solid rgb(6, 205, 240);
+    border-top-color: rgb(144, 221, 235);
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*Dots in line loading*/
+
+.lineDotsLoadingContainer .lineDots{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgb(6, 205, 240);
+    transform: scale(0.2);
+    animation: linedots 1.2s infinite;
+}
+
+
+.lineDots:nth-child(2){ animation-delay: 0.2s;}
+.lineDots:nth-child(3){ animation-delay: 0.4s;}
+.lineDots:nth-child(4){ animation-delay: 0.7s;}
+.lineDots:nth-child(5){ animation-delay: 1s;}
+.lineDots:nth-child(6){ animation-delay: 1.2s;}
+
+@keyframes linedots{
+    0%, 100%{
+        transform: scale(0.2);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,45 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.top{
+
+    width: 100%;
+    height: 20vh;
+    background: rgb(25, 10, 61, 0.5);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content .menuLateral{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    
+    max-width: 20vw;
+    height: 80vh;
+    color: #fff;
+    background: rgb(25, 10, 61, 0.5);
+}
+
+.content .container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .top span{
+    font-size: 2rem;
+    color: rgb(245, 247, 248);
+}
